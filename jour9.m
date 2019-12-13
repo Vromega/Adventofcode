@@ -1,6 +1,4 @@
-tic;
-clc;
-format long;
+tic;clc;format long;
 fileID1=fopen('jour9.txt','r');
 formatSpec1='%f';
 D = textscan(fileID1,formatSpec1,'Delimiter',',');
@@ -108,7 +106,6 @@ while code~=99
     end
     if opcode==9
         relative_base=relative_base+C(param(1)+1);
-
         i=i+2;
     end
     code=C(i);
